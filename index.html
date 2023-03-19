@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="imgs/quotes.png">
+    <title>Quotes App</title>
+</head>
+<body class="App"> 
+    <footer class="container d-flex py-3 ">
+        <i class="fa-solid fa-radio fs-2" onclick="playaudio()"></i>
+        <i class="fa-solid fa-pause fs-2 ms-2" onclick="stopaudio()"></i>
+    </footer>
+    <div class="container text-center ">
+        <audio id="aud">
+            <source src="./imgs/aud2.mp3" type="audio/mp4">
+         </audio>
+        <div class="py-3">
+            <h1 class="title fw-bolder pt-4">Quote of the Day <i class="fa-regular fa-heart"></i></h1>
+            <p class=" pt-md-5">Press the button below to recieve a random quote !</p>
+            <div >
+                <button class="quoteBtn my-md-5" onclick="generateQuote()" >New Quote</button>
+            </div>
+            <p class="pt-2" id="quotePart"></p>
+            <p id="authorPart"></p> 
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
